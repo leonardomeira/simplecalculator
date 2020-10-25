@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DS-Digital";
+    src: url("../fonts/DS-DIGII.TTF") format("truetype");
+}
+
+body {
+    background: linear-gradient(to right, rgb(6, 80, 114), rgb(143, 216, 238));
+}
+
+.container {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-family: 'Calibri';
+}
+
+.container .text .sub {
+    font-size: 30px;
+}
+
+.container .text .title {
+    font-size: 60px;
+}
+
+.container .case {
+    position: relative;
+    width: 370px;
+    height: 480px;
+    background-color: #222;
+    padding: 34px 34px 30px 34px;
+    display: flex;
+    border-radius: 24px;
+    flex-direction: column;
+    box-shadow: 2px 4px 8px black;
+}
+
+.container .case #led {
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 40%;
+}
+
+.container .case .display {
+    width: 95%;
+    height: 70px;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(123, 160, 123);
+    box-shadow: inset 0 0 3px #333;
+    font-size: 60px;
+    font-family: 'DS-Digital';
+    color:  transparent;
+    text-align: right;
+    caret-color: transparent;
+    cursor: default;
+}
+
+
+.container .case .buttons {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .case .buttons .joint {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .case .buttons .joint .button1 {
+    border: none;
+    outline: none;
+    background-color: #000;
+    width: 65px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+.container .case .buttons .joint .button1:hover {
+    opacity: 1;
+}
+
+.container .case .buttons .joint .red {
+    background-color: rgb(187, 47, 47);
+}
+
+.container .case .buttons .joint .number {
+    background-color: rgb(109, 109, 109);
+}

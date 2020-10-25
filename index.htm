@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="src/script/operations.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p class="title">Simple Calculator</p>
+            <p class="sub">by Leonardo Meira</p>
+        </div>
+        <div class="case">
+            <div id="led"></div>
+            <input id="result" type="text" class="display" readonly>
+            <div class="buttons">
+                <div class="joint">
+                        <button class="button1 red" onclick="calculate('action', 'C')" type="button">C</button>
+                        <button class="button1 red" onclick="calculator('turnOn')" type="button">AC</button>
+                        <button class="button1" onclick="calculate('action', '√')" type="button">√</button>
+                        <button class="button1" onclick="calculator('turnOff')" type="button">OFF</button>
+                </div>
+                
+                <div class="joint">
+                        <button class="button1 number" onclick="calculate('regValue', '7')" type="button">7</button>
+                        <button class="button1 number" onclick="calculate('regValue', '8')" type="button">8</button>
+                        <button class="button1 number" onclick="calculate('regValue', '9')" type="button">9</button>
+                        <button class="button1" onclick="calculate('action', '-')" type="button">-</button>
+                </div>
+                
+                <div class="joint">
+                        <button class="button1 number" onclick="calculate('regValue', '4')" type="button">4</button>
+                        <button class="button1 number" onclick="calculate('regValue', '5')" type="button">5</button>
+                        <button class="button1 number" onclick="calculate('regValue', '6')" type="button">6</button>
+                        <button class="button1" onclick="calculate('action', '*')" type="button">X</button>
+                </div>
+
+                <div class="joint">
+                        <button class="button1 number" onclick="calculate('regValue', '1')" type="button">1</button>
+                        <button class="button1 number" onclick="calculate('regValue', '2')" type="button">2</button>
+                        <button class="button1 number" onclick="calculate('regValue', '3')" type="button">3</button>
+                        <button class="button1" onclick="calculate('action', '/')" type="button">/</button>
+                </div>
+
+                <div class="joint">
+                        <button class="button1 number" onclick="calculate('regValue', '0')" type="button">0</button>
+                        <button class="button1 number" onclick="calculate('action', '.')" type="button">.</button>
+                        <button class="button1" onclick="calculate('action', '=')" type="button">=</button>
+                        <button class="button1" onclick="calculate('action', '+')" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
